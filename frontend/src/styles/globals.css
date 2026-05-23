@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+}
+
+html, body {
+  @apply h-full m-0 p-0;
+}
+
+body {
+  @apply bg-slate-50;
+}
+
+.traffic-badge {
+  @apply inline-block px-3 py-1 rounded-full font-semibold text-sm;
+}
+
+.traffic-badge-light {
+  @apply traffic-badge bg-traffic-light/20 text-traffic-light;
+}
+
+.traffic-badge-normal {
+  @apply traffic-badge bg-traffic-normal/20 text-traffic-normal;
+}
+
+.traffic-badge-heavy {
+  @apply traffic-badge bg-traffic-heavy/20 text-traffic-heavy;
+}
+
+.traffic-badge-congestion {
+  @apply traffic-badge bg-traffic-congestion/20 text-traffic-congestion;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.card-hover {
+  @apply card transition-shadow hover:shadow-lg cursor-pointer;
+}
